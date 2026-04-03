@@ -207,6 +207,45 @@ main,
   margin-top: 0.55rem;
 }
 
+.allergy-notice {
+  margin-top: 0.75rem;
+  padding: 0.68rem 0.78rem;
+  border: 1.5px solid #d3bb85;
+  border-radius: 11px;
+  background: rgba(255, 249, 235, 0.9);
+  font-size: 0.92rem;
+  color: #4a3526;
+}
+
+.menu-jump-wrap {
+  margin-top: 0.7rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.menu-jump {
+  display: inline-flex;
+  gap: 0.5rem;
+  min-width: max-content;
+}
+
+.menu-jump-link {
+  text-decoration: none;
+  color: #5a3a22;
+  font-weight: 700;
+  font-size: 0.84rem;
+  border: 1.5px solid #cfb77d;
+  background: #fff8e6;
+  border-radius: 999px;
+  padding: 0.42rem 0.76rem;
+  white-space: nowrap;
+}
+
+.menu-jump-link:hover,
+.menu-jump-link:focus-visible {
+  background: #f6e6be;
+}
+
 .menu-grid {
   margin-top: 1rem;
   display: grid;
@@ -221,10 +260,22 @@ main,
   padding: 1rem;
 }
 
+.menu-category-wide {
+  grid-column: 1 / -1;
+}
+
 .menu-category h3 {
   color: var(--brand-red-deep);
   margin-bottom: 0.65rem;
   font-size: 1.6rem;
+}
+
+.menu-category-subtext {
+  margin-top: -0.25rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.83rem;
+  letter-spacing: 0.01em;
+  color: #6d553f;
 }
 
 .menu-list {
@@ -236,8 +287,9 @@ main,
 }
 
 .menu-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
   gap: 1rem;
   border-bottom: 1px dashed rgba(113, 79, 41, 0.32);
   padding-bottom: 0.45rem;
@@ -247,10 +299,121 @@ main,
   font-weight: 600;
 }
 
+.dish-name-stack {
+  display: inline-grid;
+  gap: 0.12rem;
+}
+
+.dish-name-zh {
+  font-size: 0.82em;
+  line-height: 1.2;
+  color: #6a5442;
+}
+
+.dish-name-en {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.menu-item-prices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(3.3rem, auto));
+  column-gap: 0.65rem;
+  justify-content: end;
+}
+
 .menu-item-price {
   font-weight: 700;
   color: var(--brand-red-deep);
   white-space: nowrap;
+  text-align: right;
+}
+
+.menu-item-price-single {
+  grid-column: 1 / -1;
+}
+
+.menu-size-header {
+  border-bottom-style: solid;
+  border-bottom-color: rgba(113, 79, 41, 0.45);
+  padding-bottom: 0.3rem;
+}
+
+.menu-size-header .menu-item-name {
+  font-size: 0;
+}
+
+.menu-item-size-label {
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: #714f29;
+  text-align: right;
+}
+
+.special-table-wrap {
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.special-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.89rem;
+}
+
+.special-table th,
+.special-table td {
+  border-bottom: 1px dashed rgba(113, 79, 41, 0.32);
+  padding: 0.45rem 0.5rem;
+  vertical-align: middle;
+  background: var(--card);
+}
+
+.special-table thead th {
+  text-align: right;
+  color: #6a4a2c;
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(113, 79, 41, 0.45);
+  white-space: normal;
+  line-height: 1.2;
+  min-width: 140px;
+}
+
+.special-table tbody th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.special-table td {
+  text-align: right;
+  font-weight: 700;
+  color: var(--brand-red-deep);
+  white-space: nowrap;
+}
+
+.special-table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--card);
+  text-align: left;
+}
+
+.special-table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--card);
 }
 
 .visit {
@@ -270,6 +433,12 @@ main,
 .visit-card h2 {
   margin: 0.35rem 0 0.7rem;
   font-size: 2rem;
+}
+
+.visit-address {
+  font-size: 1.24rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
 }
 
 .text-link {
