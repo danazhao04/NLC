@@ -481,7 +481,7 @@ const dishNameZh = {
   "Spare Ribs": "排骨",
   "Special Four Season": "四季什锦",
   "Spring Roll (Vegetable)": "蔬菜春卷",
-  "Steamed or Fried Aumplings (7)": "蒸或炸饺子（7）",
+  "Steamed or Fried Dumplings (7)": "蒸或炸饺子（7）",
   "Sweet and Sour Chicken": "甜酸鸡",
   "Sweet and Sour Pork": "甜酸猪肉",
   "Sweet and Sour Shrimp": "甜酸虾",
