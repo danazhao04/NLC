@@ -257,6 +257,7 @@ main,
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 1rem;
+  min-width: 0;
 }
 
 .menu-category {
@@ -264,10 +265,13 @@ main,
   border: 1.5px solid var(--line);
   border-radius: 18px;
   padding: 1rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .menu-category-wide {
   grid-column: 1 / -1;
+  min-width: 0;
 }
 
 .menu-category h3 {
@@ -303,6 +307,8 @@ main,
 
 .menu-item-name {
   font-weight: 600;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .dish-name-stack {
@@ -362,15 +368,18 @@ main,
 
 .special-table-wrap {
   overflow-x: auto;
+  overflow-y: hidden;
   max-width: 100%;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  touch-action: pan-x;
   padding-bottom: 0.2rem;
 }
 
 .special-table {
   width: max-content;
-  min-width: 100%;
+  min-width: 760px;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 0.89rem;
@@ -624,7 +633,7 @@ main,
 
   .special-table {
     width: max-content;
-    min-width: 860px;
+    min-width: 760px;
     font-size: 0.78rem;
   }
 
