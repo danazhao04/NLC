@@ -20,7 +20,7 @@ const menuData = [
       ],
       rows: [
         {
-          dish: "(A) Chicken Wings",
+          dish: "Chicken Wings",
           prices: {
             plain: "$7.25",
             fries: "$9.25",
@@ -33,7 +33,7 @@ const menuData = [
           },
         },
         {
-          dish: "(B) Chicken Gizzards",
+          dish: "Chicken Gizzards",
           prices: {
             plain: "$7.25",
             fries: "$9.25",
@@ -46,7 +46,7 @@ const menuData = [
           },
         },
         {
-          dish: "(C) Rib Tips",
+          dish: "Rib Tips",
           prices: {
             plain: "$7.25",
             fries: "$9.25",
@@ -59,7 +59,7 @@ const menuData = [
           },
         },
         {
-          dish: "(D) Fried Scallops",
+          dish: "Fried Scallops",
           prices: {
             plain: "$7.25",
             fries: "$9.25",
@@ -72,7 +72,7 @@ const menuData = [
           },
         },
         {
-          dish: "(E) Fried Jumbo Shrimp",
+          dish: "Fried Jumbo Shrimp",
           prices: {
             plain: "$7.75",
             fries: "$9.75",
@@ -368,11 +368,11 @@ const menuData = [
 ];
 
 const dishNameZh = {
-  "(A) Chicken Wings": "(A) 鸡翅",
-  "(B) Chicken Gizzards": "(B) 鸡胗",
-  "(C) Rib Tips": "(C) 排骨尖",
-  "(D) Fried Scallops": "(D) 炸带子",
-  "(E) Fried Jumbo Shrimp": "(E) 炸大虾",
+  "Chicken Wings": "鸡翅",
+  "Chicken Gizzards": "鸡胗",
+  "Rib Tips": "排骨尖",
+  "Fried Scallops": "炸带子",
+  "Fried Jumbo Shrimp": "炸大虾",
   "BBQ Spare Ribs": "烧烤排骨",
   "Beef Chow Mein": "牛肉炒面",
   "Beef Egg Foo Young": "牛肉芙蓉蛋",
